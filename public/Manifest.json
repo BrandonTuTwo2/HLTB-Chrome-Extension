@@ -1,12 +1,12 @@
 {
     "name": "HLTB-Chrome-Extension",
     "version": "1.0.0",
-    "description": "Leverages the HLTB api to return the info inside the handy chrome Extension",
+    "description": "Uses the HLTB API to return back the inputted game completion information",
     "manifest_version": 3,
     "author": "Brandon Tu",
     "action":{
         "default_popup": "index.html",
-        "default_title": "Work in Progress"
+        "default_title": "How Long To Beat Chrome Extension"
     },
     "permissions":[
         "scripting"

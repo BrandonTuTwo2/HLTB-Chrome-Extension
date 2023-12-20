@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+#  How Long To Beat Unoffical Chrome Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+This is a little chrome exentsion I made using Vite + React + TypeScript + Shadcn/ui that displays an inputted game's completionist time information(ie how long it takes to beat it, beat with side content and complete it). I'm still unsure if I will put this on the chrome extension store
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Install
+If you want to use it (and I haven't put it on the store) then you can start by cloning this repo
 ```
+git clone https://github.com/BrandonTuTwo2/HLTB-Chrome-Extension.git
+```
+Then run npm install
+```
+npm install
+```
+Then run build
+```
+npm run build
+```
+Then you should have a `dist` folder, open up chrome and click on the puzzle icon and then manage extension at the very bottom. Oh also you need to have developer mode enabled. you should see an option to `load unpacked`. click on it and navigate to the `dist` folder and boom you should have it as an extension.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+Just click on the extension and insert in the game name, after a bit it should return to you the completionist time information and an image that when clicked, links to the assoicated HLTB page.
+
